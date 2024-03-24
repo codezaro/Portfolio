@@ -2,8 +2,8 @@ import React from "react";
 
 export const Container = () => {
   return (
-    <>
-      <div className="flex flex-col pt-20 mx-10 ">
+    <div className="flex gap-5 pt-[150px] flex-col">
+      <div className="flex flex-col pt-[150px] mx-12 ">
         <div className="flex mb-[-10px]">
           <p className="text-3xl ">Hello! </p>
           <img
@@ -21,6 +21,6 @@ export const Container = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

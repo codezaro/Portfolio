@@ -1,37 +1,52 @@
-import React from "react";
-// import { CiUser } from "react-icons/ci";
+import React, { useRef } from "react";
+
 import { FaRegUser } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
-// import { IoIosMail } from "react-icons/io";
+
 import { MdAlternateEmail } from "react-icons/md";
-export const Navbar = () => {
+export const Navbar = ({
+  scrollAboutHandler,
+  scrollResumeHandler,
+  scrollContactHandler,
+}) => {
+  //   const section2 = useRef();
+
   return (
-    <>
-      <section className="flex justify-between  p-5 items-center  bg-gradient-to-b from-[#c3436f] to-white-500">
+    <div className="fixed top-0 w-full">
+      <section className="flex justify-between flex-wrap p-5 items-center  bg-gradient-to-b from-[#c3436f] to-white-500">
         <div>
           <img
-            className="h-[140px] w-[150px]"
+            className="sm:h-[150px] sm:w-[150px]  h-[80px] w-[80px]"
             src="/public/Images/avatar.png"
             alt=""
           />
         </div>
-        <div className="flex gap-10 font-semibold text-xl pb-[45px] item-center mr-8 ">
-          <div className="flex gap-1 cursor-pointer">
+        <div className="flex gap-5 flex-wrap font-semibold text-md sm:text-xl pb-[45px] item-center mr-8 ">
+          <div
+            onClick={() => scrollAboutHandler()}
+            className="flex gap-1 cursor-pointer"
+          >
             {/* <CiUser  /> */}
-            <FaRegUser className="text-2xl " />
+            <FaRegUser className="sm:text-2xl   text-xl" />
             About
           </div>
-          <div className="flex gap-1 cursor-pointer">
-            <IoDocumentText className="text-2xl" />
+          <div
+            onClick={() => scrollResumeHandler()}
+            className="flex gap-1 cursor-pointer"
+          >
+            <IoDocumentText className="sm:text-2xl text-xl" />
             Resume
           </div>
-          <div className="flex gap-1 cursor-pointer">
+          <div
+            onClick={() => scrollContactHandler()}
+            className="flex gap-1 cursor-pointer"
+          >
             {/* <IoIosMail className="text-2xl mt-0.5" /> */}
-            <MdAlternateEmail className="text-2xl mt-0.5" />
+            <MdAlternateEmail className="sm:text-2xl text-xl mt-0.5" />
             Contact
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
