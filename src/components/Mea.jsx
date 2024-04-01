@@ -8,9 +8,9 @@ export const Mea = () => {
         the table with a passion for coding and a strong foundation in CSS,
         HTML,JavaScript, ReactJS, and proficiency in handling Git and Github.
         <br />
-        With over two years of work experience, I am particularly enthusiastic
-        about working with cutting-edge technologies like ReactJS and expanding
-        my skill set to create dynamic and user-friendly web applications.
+        I am particularly enthusiastic about working with cutting-edge
+        technologies like ReactJS and expanding my skill set to create dynamic
+        and user-friendly web applications.
         <br /> I am constantly seeking opportunities to enhance my adroitness
         and stay updated on industry trends. I am confident that my combination
         of technical skills, and commitment to growth make me a valuable asset
