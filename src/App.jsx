@@ -43,10 +43,7 @@ const App = () => {
       </section>
       <section ref={section3} className="h-[142vh] w-[100vw] ">
         <div className="h-[150vh] w-[60vw] pt-[120px] mx-auto flex flex-row">
-          <img
-            src="./Portfolio/public/Images/Harsimran-Arora-Resume.jpg"
-            alt=""
-          />
+          <img src="./public/Images/Harsimran-Arora-Resume.jpg" alt="" />
         </div>
       </section>
       <section ref={section4}>

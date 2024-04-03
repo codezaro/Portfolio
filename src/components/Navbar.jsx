@@ -17,7 +17,7 @@ export const Navbar = ({
         <div>
           <img
             className="sm:h-[150px] sm:w-[150px]  h-[80px] w-[80px]"
-            src="./Portfolio/public/Images/avatar.png"
+            src="./public/Images/avatar.png"
             alt=""
           />
         </div>
