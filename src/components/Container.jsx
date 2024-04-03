@@ -8,7 +8,7 @@ export const Container = () => {
           <p className="text-3xl ">Hello! </p>
           <img
             className="h-[50px] w-[40px] text-10xl pb-4 "
-            src="public/Images/wavinghand.png"
+            src="../public/Images/wavinghand.png"
             alt=""
           />
         </div>
