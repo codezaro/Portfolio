@@ -20,6 +20,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   // Specify Vite configuration options
   plugins: [react()],
+  base: "/Portfolio/",
   css: {
     // Specify CSS file handling options
     extract: true, // Extract CSS into separate files (set to `false` to inline CSS into JS files)
