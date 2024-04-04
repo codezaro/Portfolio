@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { FaRegUser } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
-import "./public/Images/avatar.png";
+// import "./public/Images/avatar.png";
 import { MdAlternateEmail } from "react-icons/md";
 export const Navbar = ({
   scrollAboutHandler,
@@ -17,7 +17,7 @@ export const Navbar = ({
         <div>
           <img
             className="sm:h-[150px] sm:w-[150px]  h-[80px] w-[80px]"
-            src="./public/Images/avatar.png"
+            src="Images/avatar.png"
             alt=""
           />
         </div>
