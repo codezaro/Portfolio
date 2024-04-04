@@ -1,9 +1,13 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Document, Page } from "react-pdf";
 
 export const Buttons = () => {
-  const PDF_FILE = "http://localhost:5173/HarsimranResume.pdf";
+  const PDF_FILE = () => {
+    <Document file="./public/HarsimranResume.pdf" />;
+  };
+
   const handleDownload = (url) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
