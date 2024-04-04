@@ -5,13 +5,13 @@ import { Document, Page } from "react-pdf";
 
 export const Buttons = () => {
   const PDF_FILE = () => {
-    <Document file="./public/HarsimranResume.pdf">
+    <Document file="./HarsimranResume.pdf">
       <Page />
     </Document>;
   };
 
   const handleDownload = () => {
-    const url = "./public/HarsimranResume.pdf";
+    const url = "./HarsimranResume.pdf";
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
@@ -23,6 +23,7 @@ export const Buttons = () => {
   return (
     <div className="mx-auto flex flex-row gap-6 font-medium justify-center  ">
       <div>
+        {PDF_FILE()}
         <button
           onClick={handleDownload}
           className=" border rounded-lg font-semibold text-xl"
