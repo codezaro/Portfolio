@@ -23,7 +23,6 @@ export const Buttons = () => {
   return (
     <div className="mx-auto flex flex-row gap-6 font-medium justify-center  ">
       <div>
-        {PDF_FILE()}
         <button
           onClick={handleDownload}
           className=" border rounded-lg font-semibold text-xl"
