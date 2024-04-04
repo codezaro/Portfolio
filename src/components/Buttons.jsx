@@ -10,7 +10,8 @@ export const Buttons = () => {
     </Document>;
   };
 
-  const handleDownload = (url) => {
+  const handleDownload = () => {
+    const url = "./public/HarsimranResume.pdf";
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
@@ -23,7 +24,7 @@ export const Buttons = () => {
     <div className="mx-auto flex flex-row gap-6 font-medium justify-center  ">
       <div>
         <button
-          onClick={() => handleDownload(PDF_FILE)}
+          onClick={handleDownload}
           className=" border rounded-lg font-semibold text-xl"
         >
           Download Resume
