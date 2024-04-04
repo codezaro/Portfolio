@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export const Buttons = () => {
-  const PDF_FILE = "./public/HarsimranResume.pdf";
+  const PDF_FILE = "http://localhost:5173/HarsimranResume.pdf";
   const handleDownload = (url) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
