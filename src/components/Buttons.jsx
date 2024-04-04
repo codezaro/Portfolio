@@ -4,11 +4,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { Document, Page } from "react-pdf";
 
 export const Buttons = () => {
-  const PDF_FILE = () => {
-    <Document file="./HarsimranResume.pdf">
-      <Page />
-    </Document>;
-  };
+  //   const PDF_FILE = () => {
+  //     <Document file="./HarsimranResume.pdf">
+  //       <Page />
+  //     </Document>;
+  //   };
 
   const handleDownload = () => {
     const url = "./HarsimranResume.pdf";
