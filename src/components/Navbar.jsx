@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { FaRegUser } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
-
+import "./public/Images/avatar.png";
 import { MdAlternateEmail } from "react-icons/md";
 export const Navbar = ({
   scrollAboutHandler,
