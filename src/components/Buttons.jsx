@@ -5,7 +5,9 @@ import { Document, Page } from "react-pdf";
 
 export const Buttons = () => {
   const PDF_FILE = () => {
-    <Document file="./public/HarsimranResume.pdf" />;
+    <Document file="./public/HarsimranResume.pdf">
+      <Page />
+    </Document>;
   };
 
   const handleDownload = (url) => {
