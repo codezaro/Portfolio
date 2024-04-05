@@ -30,7 +30,7 @@ const App = () => {
   };
   return (
     <>
-      <section className="h-[100vh] w-[100vw]">
+      <section className=" h-[120vh] sm:h-[100vh] w-[100vw]">
         <Navbar
           scrollAboutHandler={scrollAboutHandler}
           scrollResumeHandler={scrollResumeHandler}
@@ -38,16 +38,19 @@ const App = () => {
         />
         <Container />
       </section>
-      <section ref={section2} className="h-[100vh] w-[100vw]">
+      <section
+        ref={section2}
+        className=" h-[150vh] sm:h-[100vh] sm:w-[100vw]  "
+      >
         <Mea />
       </section>
-      <section ref={section3} className="h-[142vh] w-[100vw] ">
-        <div className="h-[150vh] w-[60vw] pt-[120px] mx-auto flex flex-row">
+      <section ref={section3} className="h-[142vh] w-[100vw]  ">
+        <div className=" pt-[200px]  sm:h-[150vh] sm:w-[60vw]  sm:pt-[100px]  mx-auto flex flex-row">
           <img src="./Images/Harsimran-Arora-Resume.jpg" alt="" />
         </div>
       </section>
-      <section ref={section4}>
-        <Buttons className="" />
+      <section className=" pt-[10px] sm:pt-[0px]  " ref={section4}>
+        <Buttons />
       </section>
     </>
   );
