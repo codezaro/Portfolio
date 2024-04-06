@@ -40,16 +40,16 @@ const App = () => {
       </section>
       <section
         ref={section2}
-        className=" h-[150vh] sm:h-[100vh] sm:w-[100vw]  "
+        className=" h-[150vh] md:h-[100vh] md:w-[100vw]  "
       >
         <Mea />
       </section>
       <section ref={section3} className="h-[142vh] w-[100vw]  ">
-        <div className=" pt-[200px]  sm:h-[150vh] sm:w-[60vw]  sm:pt-[100px]  mx-auto flex flex-row">
+        <div className=" pt-[200px]  lg:h-[150vh] lg:w-[60vw]  lg:pt-[100px]  mx-auto flex flex-row">
           <img src="./Images/Harsimran-Arora-Resume.jpg" alt="" />
         </div>
       </section>
-      <section className=" pt-[10px] sm:pt-[0px]  " ref={section4}>
+      <section className="h-[50vh] lg:h-[0px] lg:pt-[0px]  " ref={section4}>
         <Buttons />
       </section>
     </>
