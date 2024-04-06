@@ -24,7 +24,7 @@ export const Navbar = ({
         <div className="flex gap-5 flex-wrap font-semibold text-md sm:text-xl pb-[45px] item-center mr-8 ">
           <div
             onClick={() => scrollAboutHandler()}
-            className="flex gap-1 cursor-pointer"
+            className="flex gap-1 cursor-pointer "
           >
             {/* <CiUser  /> */}
             <FaRegUser className="sm:text-2xl   text-xl" />
