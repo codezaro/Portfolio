@@ -7,11 +7,11 @@ export const Buttons = () => {
   //   const PDF_FILE = () => {
   //     <Document file="./HarsimranResume.pdf">
   //       <Page />
-  //     </Document>;
-  //   };
+  //     </Document>;/Users/harsimranarora/projects/my-portfolio/public/Harsimran_Arora_Resume.pdf
+  //   };/Users/harsimranarora/projects/my-portfolio/public/Harsimran_Arora_Resume copy.pdf
 
   const handleDownload = () => {
-    const url = "./HarsimranResume.pdf";
+    const url = "./Harsimran_Arora_Resume.pdf";
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
