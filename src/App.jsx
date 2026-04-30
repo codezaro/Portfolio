@@ -3,6 +3,7 @@ import { Mea } from "./components/Mea";
 import { Container } from "./components/Container";
 import { Navbar } from "./components/Navbar";
 import { Document, Page, pdfjs } from "react-pdf";
+import resumeImg from "./../public/Images/Harsimran_Arora_resume_page.jpg";
 
 import { Buttons } from "./components/Buttons";
 const App = () => {
@@ -46,7 +47,7 @@ const App = () => {
       </section>
       <section ref={section3} className="h-[142vh] w-[100vw]  ">
         <div className=" pt-[200px]  lg:h-[150vh] lg:w-[60vw]  lg:pt-[100px]  mx-auto flex flex-row">
-          <img src="./Images/Harsimran_Arora_Resume.jpg" alt="" />
+        <img src={resumeImg} alt="Resume" />
         </div>
       </section>
       <section className="h-[50vh] lg:h-[0px] lg:pt-[0px]  " ref={section4}>

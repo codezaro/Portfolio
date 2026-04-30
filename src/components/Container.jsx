@@ -15,7 +15,7 @@ export const Container = () => {
         <div>
           <p className="text-3xl">
             I'm Harsimran Arora, <br />
-            an enthusiastic frontend developer, eager to delve into <br /> web
+            an enthusiastic frontend developer, eager to delve into <br /> web and mobile application
             development, crafting engaging user experiences with a drive to
             learn and interact.
           </p>

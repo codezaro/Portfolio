@@ -1,24 +1,18 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Document, Page } from "react-pdf";
 
 export const Buttons = () => {
-  //   const PDF_FILE = () => {
-  //     <Document file="./HarsimranResume.pdf">
-  //       <Page />
-  //     </Document>;/Users/harsimranarora/projects/my-portfolio/public/Harsimran_Arora_Resume.pdf
-  //   };/Users/harsimranarora/projects/my-portfolio/public/Harsimran_Arora_Resume copy.pdf
-
   const handleDownload = () => {
-    const url = "./Harsimran_Arora_Resume.pdf";
-    const fileName = url.split("/").pop();
+    const url = `${import.meta.env.BASE_URL}Harsimran_Arora_resume.pdf`;
+    const fileName = "Harsimran_Arora_resume.pdf";
     const aTag = document.createElement("a");
     aTag.href = url;
     aTag.setAttribute("download", fileName);
+    aTag.style.display = "none";
     document.body.appendChild(aTag);
     aTag.click();
-    aTag.remove();
+    document.body.removeChild(aTag);
   };
   return (
     <div className="mx-auto flex flex-row gap-6 font-medium justify-center  ">
